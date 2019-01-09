@@ -1,0 +1,45 @@
+#about {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-areas: 'head .' 'image image' 'text1 text2';
+	h1 {
+		grid-area: head;
+		display: inline-block;
+		border-bottom: 2px solid #ffc500;
+	}
+	#about-image {
+		grid-area: image;
+	}
+	#about1 {
+		grid-area: text1;
+	}
+	#about2 {
+		grid-area: text2;
+	}
+}
+#founder-note {
+	padding-bottom: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-areas: 'FNHead .' 'founder note';
+	h2 {
+		grid-area: FNHead;
+		margin-bottom: 0;
+	}
+	#note {
+		grid-area: note;
+		p {
+			margin-top: 0;
+		}
+		#signature {
+			width: 200px;
+		}
+	}
+	img {
+		grid-area: founder;
+	}
+}

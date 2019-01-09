@@ -1,0 +1,20 @@
+#watch {
+	padding-top: 40px;
+	text-align: center;
+	h1 {
+		display: inline-block;
+		border-bottom: 2px solid #ffc500;
+	}
+	.yotu-playlist {
+		padding: 0 0 30px;
+		.yotu-video {
+			.yotu-video-title {
+				color: black;
+				font-size: 16px;
+			}
+			.yotu-video-description {
+				font-size: 14px;
+			}
+		}
+	}
+}

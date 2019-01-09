@@ -1,0 +1,53 @@
+#tournaments {
+	padding-top: 40px;
+	padding-bottom: 60px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'header .' 'tournaments tournaments';
+	#header-container {
+		grid-area: header;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		h1 {
+			display: inline;
+			border-bottom: 2px solid #ffc500;
+		}
+	}
+	#ajax-primary {
+		grid-area: tournaments;
+		#ajax-content {
+			display: grid;
+			article {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 20px;
+				.tournament-thumbnail {
+					margin: 0 auto;
+				}
+				.tournament-details {
+					a {
+						text-decoration: none;
+						h2 {
+							color: #000;
+							margin-top: 0;
+							&:hover {
+								color: #fcc500;
+							}
+						}
+						&:hover {
+							color: #fcc500;
+						}
+					}
+				}
+			}
+			#loadMore {
+				justify-self: center;
+				color: #000;
+				text-decoration: none;
+				background-color: #fcc500;
+				padding: 10px 25px;
+				border-radius: 5px;
+			}
+		}
+	}
+}

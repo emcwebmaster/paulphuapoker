@@ -1,0 +1,91 @@
+footer {
+	background-color: #000;
+	padding: 60px 0;
+	color: #fff;
+	.site-info {
+		display: grid;
+		grid-template-columns: 1fr 1fr 2fr;
+		#column-1 {
+			p {
+				margin: 0;
+			}
+		}
+		#column-2 {
+			h4 {
+				margin-top: 0;
+			}
+			.menu-footer-container {
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					li {
+						a {
+							text-decoration: none;
+							color: #fff;
+							&:hover {
+								color: #ffc500;
+							}
+						}
+					}
+					li.current_page_item {
+						a {
+							color: #ffc500;
+						}
+					}
+				}
+			}
+		}
+		#column-3 {
+			h3 {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.wpcf7 {
+				.wpcf7-form {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					p {
+						display: inline-block;
+						margin-bottom: 0;
+					}
+					input[type="email"] {
+						background-color: #fff;
+						color: #000;
+						border-radius: 0;
+						padding: 10px;
+						&:focus {
+							outline: none;
+						}
+					}
+					input[type="submit"] {
+						border: none;
+						border-radius: 0;
+						background: #ffc500;
+						color: #000;
+						font-size: 18px;
+						padding: 15px 25px;
+						&:focus {
+							outline: none;
+						}
+						&:hover {
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			#footer-social-header {
+				margin-bottom: 10px;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				li {
+					display: inline-block;
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+}

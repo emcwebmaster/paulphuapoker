@@ -1,0 +1,13 @@
+$size__site-main: 1080px;
+$size__site-sidebar: 25%;
+
+
+.container {
+    max-width: $size__site-main;
+    margin: 0 auto !important;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+}

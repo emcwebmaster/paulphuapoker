@@ -1,0 +1,28 @@
+#content-layout {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: 'content side' 'content side';
+	grid-gap: 20px;
+	#news-content {
+		grid-area: content;
+	}
+	aside {
+		grid-area: side;
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+			li {
+				margin-bottom: 20px;
+				a {
+					color: #000;
+					&:hover {
+						color: #ffc500;
+					}
+				}
+			}
+		}
+	}
+}
